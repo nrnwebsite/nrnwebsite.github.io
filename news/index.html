@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Neoalpha Railway Network - official website</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="/" class="w3-bar-item w3-button">Home</a>
+</div>
+
+<div id="main">
+  
+<div class="w3-blue">
+  <button id="openNav" class="w3-button w3-blue w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>News</h1>
+  </div>
+</div>
+  <br>
+  <br>
+  <h1>28th of September, 2024</h1>
+  <ul>Annoucement of closure of the North Hill Area station for the Far West Line. Station is to be closed in early October. People wanting to use an AFK Pool should head to the North / Far West Line Change station where a new AFK Pool has been just built.</ul>
+  <ul>Improvements for the Far Spawn - Island II and Far Spawn - Island I station on the North Line.</ul>
+  <br>
+  <h1>6th of September 2024</h1>
+  <ul>Improvements for PingFox's Castle station (Spawn Loop Line). A minecart booster has been built. The point of departure towards the spawn has been slightly moved (it is now outside the castle). The path has been slightly moved, now it goes under the minecart booster.</ul>
+</div>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+</body>
+</html>
